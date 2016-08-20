@@ -1,0 +1,216 @@
+body {
+  font-family: 'Merriweather', serif;
+  color: darkgray;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(70,83,98);
+  color: white;
+  font-variant-caps: titling-caps;
+  text-align: center;
+  font-size: .75em;
+  z-index: 2;
+}
+
+/******************************************
+
+BORDER ISN'T QUITE RIGHT
+
+******************************************/
+
+.intro {
+  display: block;
+  clear: left;
+  margin-top: 75px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: double rgb(70,83,98);
+}
+
+
+h2, h3 {
+  color: rgb(70,83,98);
+}
+
+h3 {
+  text-align: left;
+}
+
+.intro p {
+  color: darkgray;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+/******************************************
+
+STATE / SELECT BOX NOT THE SAME WIDTH AS
+THE OTHERS, ARROWS DIFFERENT
+
+******************************************/
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"],
+select {
+  width: 90%;
+  background: #ededed;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  outline: 0;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 5px 10px 20px 0;
+}
+
+/******************************************
+
+CAN'T FIGURE OUT HOW TO MOVE PLACEHOLDER 
+TEXT OVER SLIGHTLY SO IT ISN'T CUT OFF
+
+******************************************/
+
+#name, placeholder,
+#mail, placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+input[name="user_zip"] {
+  width: 50%;
+  background: #ededed;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  outline: 0;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 5px 10px 20px 0;
+  clear: both;
+}
+
+input:focus,
+textarea:focus {
+  border-style: solid;
+  border-color: #003366;
+}
+
+textarea {
+  width: 90%;
+  background: #ededed;
+  border: none;
+  font-size: 16px;
+  height: 75px;
+  outline: 0;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 10px 20px 0;
+}
+
+.contact-info {
+  margin-top: 3px;
+  border-bottom: solid rgb(70,83,98);
+
+}
+
+.newsletter p {
+  text-align: left;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+/******************************************
+
+CAN'T FIGURE OUT HOW TO STYLE CHECKBOX/RADIO -- UNCHECKED
+
+-NO BORDER
+-NO SHADOW
+
+    input[type="checkbox"] {
+          border: none;
+          box-shadow: none;
+        }
+
+******************************************/
+
+/******************************************
+
+CAN'T FIGURE OUT HOW TO STYLE CHECKBOX/RADIO -- CHECKED
+
+-BLUE BORDER / TEXT
+
+    input[type="checkbox"]:checked {
+      color: #003366; 
+      border-style: solid;
+      border-color: #003366;
+    }
+
+******************************************/
+
+
+div:nth-last-of-type(1) {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 90%;
+  background-color: #20b2aa;
+  color: white;
+  padding: 20px 0;
+  border: none;
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+footer {
+  font-style: italic;
+  font-size: .75em;
+  text-align: center;
+  color: darkgray;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 760px) {
+
+body {
+  width: 80%;
+  margin-left: 100px;
+}
+
+.contact-info label {
+  float: left;
+  display: block;
+  width: 150px;
+  padding-top: 25px;
+  clear: both;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"],
+select {
+  width: 65%;
+  position: relative;
+}
+
+input[name="user_zip"] {
+  width: 25%;
+}
+
+}
